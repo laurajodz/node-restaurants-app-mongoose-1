@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: hvOceAg7fEugxP9LVhUD1omD+9+JwIstTYVQ+qJFISyPLBhU3MSrxGVkdhku/5eZM8najyY996AtAkIR1qGBXtBDCkgTqMvAh1XwMEzX/70zZtf4aRS/woLB7r71wYaz/vo4qfxa7DNtY0+JKOSnznGIhJuAiy0JAAYfCxkd2AVymciPaOmZ771PaL4m0tmqU5i18Bw0gpV6CLUooGoKEH0pPUeHO4qR+BNoMMQji1RMe95p5G9nzIed/fGhA27QF522mDbGJJlDVOgFXQXhjIvpUHKCSiFLsX0iz3LaiOTqPyAf5SbuHTCeLiFoBhNj54VbfyHy0zaa7XWi1PygzrRGpihM4QtxyB/1XXdA6Xn3tAQj9ytKXS1hSaWnwnys2RuWNOl0vcID2QVApXhsnTYnfA5c8pVJ+CtbzBX+RiwMhlU5MerIMwKJp2oypeN64HvkSNuIXxx0VfT2SA3HX4Y14gz0rVTmowO/c6365JPavMWKLvaK0lpT1v/ZQz06p/fVZlW8Y3KnPUcDP8aHsEAhdDiDunbPOWV8gifx7mhj+QTQMTVKxAjy1RlwZTyrLyM3P8zldCNEawgYXfUxB+8m9FuXNM7sunjsoeRvem25MbHr0VPO1Y9Lu47QXLMWDKoKN1YjKHtbFxtxA8tQHllHn9fqCa0hiQOMwVNEGkE=
+  app: sheltered-reaches-40501
+  on:
+    repo: laurajodz/node-restaurants-app-mongoose-1
+    branch: feature/with-tests
